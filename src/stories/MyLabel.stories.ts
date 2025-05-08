@@ -39,10 +39,30 @@ export const Secondary: Story = {
     }
 }
 
-export const CustomColor: Story = {
+export const Tertiary: Story = {
     // Definir aqui nuestros argumentos
     args: {
-        label: 'CustomColor label',
-        fontColor: '#FAFA12'
+        label: 'Tertiary label',
+        color: 'text-tertiary'
     }
 }
+
+export const CustomFontColor: Story = {
+    // Definir aqui nuestros argumentos
+    args: {
+        size: 'h1',
+        label: 'CustomFontColor label',
+        fontColor: 'black'
+    }
+}
+
+export const CustomBackgroundColor: Story = {
+    // Definir aqui nuestros argumentos
+    args: {
+        size: 'h1',
+        label: 'CustomBackgroundColor label',
+        fontColor: 'white',
+        backgroundColor: 'black'
+    }
+}
+
