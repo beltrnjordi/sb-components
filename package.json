@@ -1,20 +1,42 @@
 {
-  "name": "my-storybook",
-  "private": true,
-  "version": "0.0.0",
+  "name": "jorbel-custom-components",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
+  "keywords": [
+    "react",
+    "dev",
+    "jorbel",
+    "curso"
+  ],
+  "license": "MIT",
+  "homepage": "https://beltrnjordi.vercel.app",
+  "repository": {
+    "url": "",
+    "type": "git"
+  },
+  "files": [
+    "dist/"
+  ],
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "engines": {},
   "scripts": {
     "dev": "npm run storybook",
-    "build": "tsc -b && vite build",
+    "build": "tsc",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_ecfbbd9c18e7fd9"
-  },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "chromatic": "npx chromatic --project-token=chpt_ecfbbd9c18e7fd9",
+    "clean": "rimraf dist"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",
@@ -38,6 +60,9 @@
     "eslint-plugin-storybook": "^0.12.0",
     "globals": "^15.15.0",
     "playwright": "^1.52.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rimraf": "^6.0.1",
     "storybook": "^8.6.12",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
